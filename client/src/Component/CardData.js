@@ -9,8 +9,8 @@ const CardData=[
 
     },
     {
-        productImage:"https://res.cloudinary.com/bazeercloud/image/upload/v1712252075/TestFolder/product-02-02-2024-1706895960-WhatsApp_Image_2024-02-02_at_11.13.14_PM_3_gi2fo2.jpg",
-        name:"earbuds",
+        productImage:"https://res.cloudinary.com/bazeercloud/image/upload/v1712304831/TestFolder/product-02-02-2024-1706897807-WhatsApp_Image_2024-02-02_at_11.46.10_PM_zvvele.jpg",
+        name:"Keyboard",
         description:"",
         discount: "",
         price:"",
@@ -58,16 +58,7 @@ const CardData=[
         bottomText:"Free Delivery in Two Days"
 
     },
-    {
-        productImage:"https://res.cloudinary.com/bazeercloud/image/upload/v1712252028/TestFolder/product-26-03-2024-1711435873--original-imagqtnzkgbevy3a_ugvfh1.jpg",
-        name:"watch",
-        description:"",
-        discount: "",
-        price:"",
-        assuredImage:"",
-        bottomText:"Free Delivery in Two Days"
-
-    },
+   
     
 ];
 

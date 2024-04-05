@@ -48,7 +48,7 @@ export default function HeroSection(){
  
          {/* Card */}
  
-         <div className='mt-[10%] flex justify-evenly overflow-hidden flex-wrap w-full'>
+         <div className='mt-[10%] flex flex-row justify-evenly overflow-hidden flex-wrap w-full gap-4'>
              {CardData.map((data, index) => (
                  <Card key={index} data={data} />
              ))}
