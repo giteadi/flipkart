@@ -4,8 +4,11 @@ import top from '../Images/top-bg.jpg';
 import clock from '../Images/clock.svg';
 import Card from './Card';
 import CardData from './CardData';
+import Navbar from "../Component/NavBar";
 
+import {useNavigate} from 'react-router-dom';
 export default function HeroSection(){
+    const navigate=useNavigate();
     const totalSeconds = 5 * 60; // 5 minutes in seconds
     const [countdown, setCountdown] = useState(totalSeconds);
  
@@ -28,8 +31,15 @@ export default function HeroSection(){
  
     return(
      <div>  
-         <div className="pt-[10%] scale-125 flex items-center justify-center flex-wrap">
-             <img src={top} alt="upper"/>
+          
+          <div>
+          <Navbar />
+          </div>
+        
+         <div className="pt-[10%] scale-125 flex items-center justify-center flex-wrap topImage">
+            <button onClick={()=>navigate('/page2')}>
+            <img src={top} alt="upper"/>
+            </button>
          </div>
          
          {/* carousal */}
@@ -53,7 +63,9 @@ export default function HeroSection(){
                  <Card key={index} data={data} />
              ))}
          </div>
- 
+        {/* <div>
+            <Nav2/>
+        </div> */}
      </div>
     )
  }

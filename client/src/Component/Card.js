@@ -1,5 +1,11 @@
 export default function Card({ data }) {
-    const { productImage, name, description, discount, price, assuredImage, bottomText } = data;
+    // Check if data is undefined, and provide a default value if it is
+    if (!data) {
+        return null; // or handle this case as needed
+    }
+
+    // Destructure properties from data with default values
+    const { productImage, name, description, discount, price, assuredImage, bottomText } = data || {};
 
     return (
         <div className="p-4 transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg hover:scale-105 w-[400px] h-[400px] flex flex-wrap object-cover">
