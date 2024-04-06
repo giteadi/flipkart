@@ -5,8 +5,9 @@ import clock from '../Images/clock.svg';
 import Card from './Card';
 import CardData from './CardData';
 import Navbar from "../Component/NavBar";
-
 import {useNavigate} from 'react-router-dom';
+import Admin from './Admin';
+
 export default function HeroSection(){
     const navigate=useNavigate();
     const totalSeconds = 5 * 60; // 5 minutes in seconds
@@ -63,9 +64,7 @@ export default function HeroSection(){
                  <Card key={index} data={data} />
              ))}
          </div>
-        {/* <div>
-            <Nav2/>
-        </div> */}
+          <Admin/>
      </div>
     )
  }
