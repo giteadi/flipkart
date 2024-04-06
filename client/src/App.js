@@ -9,14 +9,12 @@ import Details from "./Component/Details";
 
 function App() {
   return (
-    <div className="overflow-hidden">
+    <div>
         <Routes>
           <Route path="/" element={<HeroSection />} />
           <Route path="/page2" element={<Page2/>}/>
           <Route path="/form" element={<Admin/>}/>
           <Route path="/details/:id" element={<Details />} />
-
-
         </Routes>
   
     </div>

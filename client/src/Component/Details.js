@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import CardData from './CardData';
 import Nav2 from './Nav2';
-import './page2.css';
+
 export default function Details() {
     const { id } = useParams();
     console.log('ID:', id);
@@ -16,16 +16,16 @@ export default function Details() {
     const { productImage, name, description, discount, price, assuredImage, bottomText } = product;
 
     return (
-        <div className='flex flex-wrap items-center justify-around detail-card '>
+        <div>
           <div>
           <Nav2/>
           </div>
             {/* Card section ot product detail section */}
-            <div className="max-w-2xl px-4 py-8 ">
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center justify-center">
+            <div className='mt-[12%]'>
                 <img src={productImage} alt="product" className="max-h-96" />
             </div>
-            <div className="mt-8">
+            <div>
                 <h2 className="text-3xl font-bold">{name}</h2>
                 <p className="mt-2 text-gray-600">{description}</p>
                 <p className="mt-2 text-gray-600">{discount}</p>

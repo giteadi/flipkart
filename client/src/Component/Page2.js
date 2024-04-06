@@ -2,7 +2,6 @@ import React from 'react';
 import Card from './Card';
 import CardData from './CardData';
 import Nav2 from './Nav2'
-import './page2.css'
 import { useNavigate } from 'react-router-dom';
 export default function Page2() {
     const handleCardClick = (id) => {
@@ -16,8 +15,8 @@ export default function Page2() {
            </section>
 
             {/* Card */}
-           <section>
-           <div className='mt-[20%] flex justify-evenly overflow-hidden flex-wrap w-full gap-4 size-min'>
+           <section className='mt-[5%]'>
+           <div className='flex flex-wrap w-full gap-4 overflow-hidden justify-evenly size-min'>
             {CardData.map((data, index) => (
             <Card key={index} data={data} id={data.id} onCardClick={handleCardClick} />
         ))}
