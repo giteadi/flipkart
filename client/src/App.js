@@ -9,7 +9,7 @@ import Details from "./Component/Details";
 
 function App() {
   return (
-    <div className="overflow-hidden ">
+    <div className="overflow-hidden">
         <Routes>
           <Route path="/" element={<HeroSection />} />
           <Route path="/page2" element={<Page2/>}/>
