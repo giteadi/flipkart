@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import banner1 from '../Images/banner-1.jpg';
-import banner2 from '../Images/banner-2.jpg';
+import new1 from "../Images/new1.jpg";
+import new2 from '../Images/new2.jpg';
 import banner4 from '../Images/banner-4.jpeg';
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    banner1,
-    banner2,
+    new1,
+    new2,
     banner4
   ];
 

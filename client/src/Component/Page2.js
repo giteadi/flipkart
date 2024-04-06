@@ -17,7 +17,7 @@ export default function Page2() {
 
             {/* Card */}
            <section>
-           <div className='mt-[10%] flex justify-evenly overflow-hidden flex-wrap w-full gap-4 size-min'>
+           <div className='mt-[20%] flex justify-evenly overflow-hidden flex-wrap w-full gap-4 size-min'>
             {CardData.map((data, index) => (
             <Card key={index} data={data} id={data.id} onCardClick={handleCardClick} />
         ))}
