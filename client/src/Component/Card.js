@@ -8,9 +8,9 @@ export default function Card({ data }) {
     const { productImage, name, description, discount, price, assuredImage, bottomText } = data || {};
 
     return (
-        <div className="p-4 transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg hover:scale-105 w-[400px] h-[400px] flex flex-wrap object-cover">
+        <div className="p-4 transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg hover:scale-105 w-[400px] h-[400px] flex flex-wrap object-cover ">
             <div className="relative">
-                <img src={productImage} alt="product" className="object-cover w-full h-auto rounded-lg cursor-pointer" loading="lazy" />
+                <img src={productImage} alt="product" className="object-cover w-full h-[200px] rounded-lg cursor-pointer" loading="lazy" />
                 {assuredImage && <img src={assuredImage} alt="assured" className="absolute w-12 top-2 right-2" />}
             </div>
             <div className="flex flex-col justify-between mt-4">

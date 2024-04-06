@@ -6,7 +6,6 @@ import Card from './Card';
 import CardData from './CardData';
 import Navbar from "../Component/NavBar";
 import {useNavigate} from 'react-router-dom';
-import Admin from './Admin';
 
 export default function HeroSection(){
     const navigate=useNavigate();
@@ -44,14 +43,14 @@ export default function HeroSection(){
          </div>
          
          {/* carousal */}
-         <div className="pt-[10%]">
+         <div className="pt-[8%] scale-125 object-cover">
              <Carousal/>
          </div>
          
-         <div className="pt-[4%] flex items-center justify-center flex-col">
+         <div className="pt-[5%] flex items-center justify-center flex-col">
              <p className="text-2xl font-bold text-blue-800">Deals of the Day</p>
              
-             <div className="flex items-center">
+             <div className="flex items-center ">
                  <img src={clock} alt="clock" className="mr-2"/>
                  <p className="text-xl font-bold text-blue-800">{formattedTime}</p>
              </div>
@@ -59,12 +58,12 @@ export default function HeroSection(){
  
          {/* Card */}
  
-         <div className='mt-[10%] flex flex-row justify-evenly overflow-hidden flex-wrap w-full gap-4'>
+         <div className='mt-[10%] flex justify-evenly overflow-hidden flex-wrap w-full gap-4 size-min'>
              {CardData.map((data, index) => (
                  <Card key={index} data={data} />
              ))}
          </div>
-          <Admin/>
+    
      </div>
     )
  }

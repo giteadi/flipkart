@@ -26,7 +26,7 @@ const Carousel = () => {
       <div className="relative flex items-center justify-center h-56 overflow-hidden rounded-lg md:h-96">
         {slides.map((slide, index) => (
           <div key={index} className={`absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 ${index === currentSlide ? '' : 'hidden'} duration-700 ease-in-out`} data-carousel-item>
-            <img src={slide} alt={`Slide ${index + 1}`} style={{ objectFit: 'cover', width: '100%', height: '100%', scale:'0.8' , }} />
+            <img src={slide} alt={`Slide ${index + 1}`} style={{ objectFit: 'cover', width: '100%', maxHeight: '100%', scale:'0.8' }} />
           </div>
         ))}
       </div>
